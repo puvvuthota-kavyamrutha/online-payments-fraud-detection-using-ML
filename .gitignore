@@ -1,0 +1,76 @@
+# ===============================
+# Dataset Files
+# ===============================
+
+fraud.csv
+data/fraud.csv
+*.csv
+
+# If dataset is inside notebooks
+notebooks/fraud.csv
+
+# ===============================
+# Model Files (optional)
+# ===============================
+
+# If you don't want to push trained models
+# Uncomment below if needed
+# model/*.pkl
+# models/*.pkl
+
+# ===============================
+# Python Cache
+# ===============================
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ===============================
+# Virtual Environment
+# ===============================
+
+venv/
+env/
+.venv/
+ENV/
+
+# ===============================
+# Jupyter Notebook Checkpoints
+# ===============================
+
+.ipynb_checkpoints/
+
+# ===============================
+# OS Files
+# ===============================
+
+.DS_Store
+Thumbs.db
+
+# ===============================
+# Streamlit
+# ===============================
+
+.streamlit/
+
+# ===============================
+# Logs
+# ===============================
+
+*.log
+
+# ===============================
+# IDE Files
+# ===============================
+
+.vscode/
+.idea/
+
+# ===============================
+# Temporary Files
+# ===============================
+
+*.tmp
+*.bak
