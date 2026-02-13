@@ -16,17 +16,35 @@ The system:
 
 ---
 
+## 🗂️ Dataset Information
+
+This project is trained using the **PaySim Synthetic Financial Dataset for Fraud Detection**.
+
+🔗 **Dataset Link:**  
+[https://www.kaggle.com/datasets/jainilcoder/online-payment-fraud-detection]
+
+### ⚠️ Note:
+The dataset file (`fraud.csv`) is **not included in this repository** because it is large in size and exceeds GitHub's recommended file limits.
+
+To run this project:
+
+1. Download the dataset from the Kaggle link above.
+2. Place `fraud.csv` inside a `data/` folder in the project root.
+3. Retrain the model using the provided Jupyter Notebook.
+
+---
+
 ## 🧠 Machine Learning Model
 
 **Algorithm Used:** Random Forest Classifier  
 
-**Why Random Forest?**
+### Why Random Forest?
 - Handles high-dimensional data effectively
 - Reduces overfitting via ensemble learning
 - Performs well on imbalanced datasets
 - Provides probability-based predictions
 
-**Fraud Detection Strategy:**
+### Fraud Detection Strategy
 - Uses transaction features such as balance changes and transaction type
 - Calculates fraud probability
 - Applies threshold-based classification
@@ -110,7 +128,17 @@ pip install -r requirements.txt
 
 ---
 
-### 3️⃣ Run the Streamlit Application
+### 3️⃣ (Optional) Retrain the Model
+
+If model files are not included:
+
+```bash
+jupyter notebook notebooks/fraud_model_training.ipynb
+```
+
+---
+
+### 4️⃣ Run the Streamlit Application
 
 ```bash
 streamlit run app/streamlit_app.py
@@ -158,6 +186,7 @@ For fraud detection, **Recall and ROC-AUC** are prioritized over accuracy.
 - The dataset file (`fraud.csv`) is excluded from GitHub via `.gitignore`.
 - The model must be retrained if feature structure changes.
 - Transaction type encoding must match training encoding.
+- Large datasets are not pushed to maintain repository efficiency.
 
 ---
 
